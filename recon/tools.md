@@ -28,11 +28,11 @@
 
 * [CRT](https://crt.sh)
 * [SSLLabs](https://www.ssllabs.com)
-* ssl-cert 
+* ssl-cert  
     ```nmap -sT -p 443 --script ssl-cert domain```
-* ssl-enum-ciphers
+* ssl-enum-ciphers  
 	```nmap -sT -p 443 --script ssl-enum-ciphers domain```
-* script ssl-dh-params
+* script ssl-dh-params  
 	```nmap -sT -p 443 --script ssl-dh-params domain```
 
 ## Enumeración de subdominios
