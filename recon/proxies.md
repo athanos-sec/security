@@ -8,19 +8,22 @@ Realizar el análisis de estos métodos desde el navegador puede ser engorroso, 
 Usamos la versión Community de Burp Suite que es gratuita
 <https://portswigger.net/burp/releases/community/latest>
 
-Para trabajar con Burp Suite, ZAP, o algún otro proxy se recomienda usar Firefox, ya que se puede configurar dentro del navegador. Chrome lleva directamente a la configuración de proxy de tu SO. __En las últimas versiones de burp suite, trae una opción de Launch Browser en la pestaña de Proxie, la misma nos lanzará una sesión de Chromium con todas las configuraciones que se mencionan a continuación, listo para empezar a trabajar.__
+Para trabajar con Burp Suite, ZAP, o algún otro proxy se recomienda usar Firefox, ya que se puede configurar dentro del navegador. Chrome lleva directamente a la configuración de proxy de tu SO. 
+__En las últimas versiones de burp suite, trae una opción de Launch Browser en la pestaña de Proxie, la misma nos lanzará una sesión de Chromium con todas las configuraciones que se mencionan a continuación, listo para empezar a trabajar.__
 
+### Configuración
 Una vez instalado y abierto Burp Suite, nos queda configurar el navegador. En Firefox vamos a opciones, buscamos la opción de Configuración de Proxy, configuramos el Proxy HTTP con 127.0.0.1, el puerto que luego vayamos a especificar dentro del proxy, que por defecto es 8080 y por último marcamos la casilla de usar también este proxy para FTP y HTTPS.
 
 Ahora nos queda instalar el certificado de Burp Suite en Firefox. Para eso primero desactivamos el Intercept de Burp, nos dirigimos a la Pestaña superior Proxy, y luego a la pestaña inferior Intercept. Allí haremos click en el botón "Intecept is on", que cambiará a "is off". Luego ingresamos en nuestro navegador (Firefox) a http://burp/ y hacemos click en la parte "CA Certificate", lo cual descargará un archivo. Si no se muestra nada al ingresar es porque el proxy está mal configurado.
 
 Por último instalamos el certificado en Opciones →  Certificados →  Ver Certificados →  Importar (Seleccionamos el archivo que acabamos de descargar)
 
-__Podemos llegar a tener problemas si tenemos que trabajar en el localhost, para solucionar esto: __
+__Podemos llegar a tener problemas si tenemos que trabajar en el localhost, para solucionar esto:__
 * Loguear localhost en Burp desde firefox
 * Ir a about:config
 * network.proxy.allow_hijacking_localhost → true
 
+### BurpSuite
 Una vez realizados estos pasos, hay un paso que es opcional pero facilita mucho el trabajo: Nos dirigimos a la pestaña superior __"Target"__ y a la pestaña inferior __"Scope"__. Hacemos click en __Add__ y luego especificamos en la ventana que se abrió los datos sobre la página que nos interesa. Si no se sabe sobre alguno de los campos es mejor dejarlo en blanco.
 
 Al hacer click en Ok se nos abrirá un mensaje que nos preguntará si se quiere que Burp deje de enviar los elementos fuera del Scope (es decir, todas las páginas que nosotros no especificamos en esta pestaña). Lo recomendable es apretar "Yes", para así evitar luego tener que ver peticiones de dominios que no nos interesan.
