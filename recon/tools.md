@@ -4,9 +4,9 @@
 
 * [BGP](https://bgp.he.net)
 * [CentralOps](https://centralops.net/co/)
-* [RObtex]https://www.robtex.com/)
-* [DNSDumpster]https://dnsdumpster.com/)
-* [MXToolbox]https://mxtoolbox.com)
+* [RObtex](https://www.robtex.com/)
+* [DNSDumpster](https://dnsdumpster.com/)
+* [MXToolbox](https://mxtoolbox.com)
 * `dig`
 
 ## Escaneo de puertos - red
@@ -27,7 +27,7 @@
 # Certificados
 
 * [CRT](https://crt.sh)
-* [SSLLabs]https://www.ssllabs.com)
+* [SSLLabs](https://www.ssllabs.com)
 * ssl-cert 
     ```nmap -sT -p 443 --script ssl-cert domain```
 * ssl-enum-ciphers
