@@ -3,10 +3,10 @@
 ## ASN - Información IP - Whois - DNS
 
 * [BGP](https://bgp.he.net)
-* [CentralOps](https://centralops.net/co/)
-* [RObtex](https://www.robtex.com/)
-* [DNSDumpster](https://dnsdumpster.com/)
-* [MXToolbox](https://mxtoolbox.com)
+* [Central Ops](https://centralops.net/co/)
+* [Robtex](https://www.robtex.com/)
+* [DNS Dumpster](https://dnsdumpster.com/)
+* [MX Toolbox](https://mxtoolbox.com)
 * `dig`
 
 ## Escaneo de puertos - red
@@ -18,7 +18,7 @@
     nmap -f --script discovery -sV domain
     nmap -f --script intrusive domain
     ```
-* [NmapOnline](https://hackertarget.com/nmap-online-port-scanner/)
+* [Nmap Online](https://hackertarget.com/nmap-online-port-scanner/)
 * [Shodan](https://shodan.io)
 * SypapsInt
 * NetCraft
@@ -27,7 +27,7 @@
 # Certificados
 
 * [CRT](https://crt.sh)
-* [SSLLabs](https://www.ssllabs.com)
+* [SSL Labs](https://www.ssllabs.com)
 * ssl-cert  
     ```nmap -sT -p 443 --script ssl-cert domain```
 * ssl-enum-ciphers  
