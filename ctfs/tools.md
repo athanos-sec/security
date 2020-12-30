@@ -1,6 +1,6 @@
 # CTF Tools
 
-##Steganography
+## Steganography
 * [Audacity](https://www.audacityteam.org/)
 * [StegSolve](http://www.caesum.com/handbook/stego.htm)
 * [Morse Decoder](https://morsecode.world/international/translator.html)
@@ -12,12 +12,12 @@
 * [OpenStego](https://www.openstego.com/)
 * [More Tools](https://en.wikipedia.org/wiki/Steganography_tools#Tools_comparison)
 
-##Reverse engineering & cracking
+## Reverse engineering & cracking
 * [dotPeek](https://www.jetbrains.com/decompiler/)
 * [Jadx](https://github.com/skylot/jadx)
 * [Cheat Engine](https://www.cheatengine.org/)
 
-##Cryptography
+## Cryptography
 * [Multi-tap Phone Cipher (SMS)](https://www.dcode.fr/multitap-abc-cipher)
 * [Vigenere Cipher](https://www.dcode.fr/vigenere-cipher)
 * [Enigma](https://cryptii.com/pipes/enigma-machine)
@@ -26,18 +26,18 @@
 * [Crunch](https://kali-linux.net/crunch-paso-a-paso/)
 * [John The Ripper](https://kali-linux.net/article/jhon-the-ripper/)
 
-##Utilities
+## Utilities
 * [CyberChef](http://icyberchef.com/)
 * [Virus Total](https://www.virustotal.com/gui/)
 * [CTF Field Guide](https://trailofbits.github.io/ctf/)
 
-##Old tech
+## Old tech
 * [SWF Tools](http://www.swftools.org/)
 * [Punchcard Decoder](http://laighside.com/punchcard.htm)
 * [AudioTap](http://wav-prg.sourceforge.net/audiotap.html)
 * [FinalTap](https://www.subchristsoftware.com/downloads/FinalTap2_7_Beta2.zip)
 * [C64 Emulator](https://vice-emu.sourceforge.io/index.html#download)
 
-##OSINT
+## OSINT
 * [OSINT Framework](https://osintframework.com/)
 * [Carrier Lookup](https://www.freecarrierlookup.com/)
