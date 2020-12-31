@@ -28,6 +28,7 @@
 
 ## Utilities
 * [CyberChef](http://icyberchef.com/)
+* [Hybrid Analysis](https://hybrid-analysis.com/)
 * [Virus Total](https://www.virustotal.com/gui/)
 * [CTF Field Guide](https://trailofbits.github.io/ctf/)
 
@@ -40,4 +41,5 @@
 
 ## OSINT
 * [OSINT Framework](https://osintframework.com/)
+* [theHarvester](https://github.com/laramies/theHarvester)
 * [Carrier Lookup](https://www.freecarrierlookup.com/)
