@@ -16,6 +16,8 @@
 * [dotPeek](https://www.jetbrains.com/decompiler/)
 * [Jadx](https://github.com/skylot/jadx)
 * [Cheat Engine](https://www.cheatengine.org/)
+* [Cutter](https://github.com/rizinorg/cutter/releases/tag/v1.12.0)
+* [SysAnalyzer](http://sandsprite.com/iDef/SysAnalyzer/)
 
 ## Cryptography
 * [Multi-tap Phone Cipher (SMS)](https://www.dcode.fr/multitap-abc-cipher)
