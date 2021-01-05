@@ -2,9 +2,9 @@
 # Análisis Dinámico de la Aplicación
 ## Autenticación
 - [ ] Proceso de registración de usuarios
-- [ ]  Proceso de password reset  
+- [ ] Proceso de password reset  
 
-       Password reset tokens (caducidad/reutilización)
+      Password reset tokens (caducidad/reutilización)
 - [ ] Bloqueo de cuenta por reintentos fallidos
 - [ ] Política de Passwords
 - [ ] Update de información de cuenta sin pedir contraseña
