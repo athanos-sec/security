@@ -1,4 +1,3 @@
-- [ ] asd
 # Análisis Dinámico de la Aplicación
 ## Autenticación
 - [ ] Proceso de registración de usuarios
@@ -40,7 +39,7 @@
 
      - [c-jwt-cracker](https://github.com/brendan-rius/c-jwt-cracker)
 
-     Fuerza bruta, ejemplo: ./jwtcrack eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.cAOIAifu3fykvhkHpbuhbvtH807-Z2rI1FS3vX1XMjE
+          Fuerza bruta, ejemplo: ./jwtcrack eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.cAOIAifu3fykvhkHpbuhbvtH807-Z2rI1FS3vX1XMjE
 
      - [jwt_tool](https://github.com/ticarpi/jwt_tool)
 
@@ -48,6 +47,6 @@
 
      - [JWT2Jhon](https://raw.githubusercontent.com/Sjord/jwtcrack/master/jwt2john.py)
 
-     Para convertir los JWT a formato crackeable por John python3 jwt2john.py
+          Para convertir los JWT a formato crackeable por John python3 jwt2john.py
 
-     Ejecutar John: ./john /tmp/token.txt —wordlist=wordlist.txt
+          Ejecutar John: ./john /tmp/token.txt —wordlist=wordlist.txt
