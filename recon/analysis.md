@@ -1,4 +1,4 @@
-- [ ] 
+- [ ] asd
 # Análisis Dinámico de la Aplicación:
 Autenticación:
  Proceso de registración de usuarios
