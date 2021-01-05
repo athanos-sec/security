@@ -17,9 +17,13 @@
     nmap -f --open -sV domain (Quick scan, open ports)
     nmap -f --script discovery -sV domain
     nmap -f --script intrusive domain
+    nmap target -sS -A -PN -sC -sV -vvv -p-65535
+    -sS syn scan -A OS + service fingerprint -PN No Ping -sC Scripts -sV versions detection -vvv Verbosity -p-65535 (all ports)
     ```
 * [Nmap Online](https://hackertarget.com/nmap-online-port-scanner/)
 * [Shodan](https://shodan.io)
+* [Nikto](https://github.com/sullo/nikto)
+* [HTTProbe](https://github.com/tomnomnom/httprobe)
 * SypapsInt
 * NetCraft
 * Striker
