@@ -45,3 +45,4 @@
 * [OSINT Framework](https://osintframework.com/)
 * [theHarvester](https://github.com/laramies/theHarvester)
 * [Carrier Lookup](https://www.freecarrierlookup.com/)
+* [Sherlock] (https://github.com/sherlock-project/sherlock)
