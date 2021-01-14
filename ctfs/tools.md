@@ -29,10 +29,10 @@
 * [John The Ripper](https://kali-linux.net/article/jhon-the-ripper/)
 
 ## Utilities
-* [CyberChef](http://icyberchef.com/)
+* [CyberChef](https://gchq.github.io/CyberChef/)
 * [Hybrid Analysis](https://hybrid-analysis.com/)
 * [Virus Total](https://www.virustotal.com/gui/)
-* [CTF Field Guide](https://trailofbits.github.io/ctf/)
+* [AnyRun](https://any.run/)
 
 ## Old tech
 * [SWF Tools](http://www.swftools.org/)
