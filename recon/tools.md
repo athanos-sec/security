@@ -69,3 +69,13 @@
 ### Keys
 
 * [Secretfinder](https://github.com/m4ll0k/SecretFinder)
+
+## Transferencia de zona
+
+`dnsenum dominio`
+
+## DNS Brutting
+
+`dnsrecon -d dominio`
+`dnsmap dominio / dnsmap dominio -w diccionario`
+`dnsenum dominio -f diccionario`
