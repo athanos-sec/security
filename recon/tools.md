@@ -94,12 +94,12 @@
 
 ### Vulnerabilidades y plugins
 
-* BlindElephant: propósito general, contiene listado plugins Dupal y WordPress
-	```BlindElephant -u```
-	```BlindElephant dominio tipo_cms```
-* Nikto: propósito general
-	```nikto -update```
-	```nikto -h dominio```
-* Plecost: especilizado en WordPress
-* Wpscan: especilizado en WordPress
-* JoomScan: especilizado en Joomla
+* BlindElephant: propósito general, contiene listado plugins Dupal y WordPress   
+	```BlindElephant -u```   
+	```BlindElephant dominio tipo_cms```   
+* Nikto: propósito general   
+	```nikto -update```   
+	```nikto -h dominio```   
+* Plecost: especializado en WordPress
+* Wpscan: especializado en WordPress
+* JoomScan: especializado en Joomla
