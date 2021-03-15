@@ -87,3 +87,19 @@
 ## Banner Grabbing
 
 `echo "" | nc -v -n -w 1 IP 21-80`   
+
+## Identificación del CMS
+
+`whatweb -v dominio`   
+
+### Vulnerabilidades y plugins
+
+* BlindElephant: propósito general, contiene listado plugins Dupal y WordPress
+	```BlindElephant -u```
+	```BlindElephant dominio tipo_cms```
+* Nikto: propósito general
+	```nikto -update```
+	```nikto -h dominio```
+* Plecost: especilizado en WordPress
+* Wpscan: especilizado en WordPress
+* JoomScan: especilizado en Joomla
