@@ -76,6 +76,14 @@
 
 ## DNS Brutting
 
-`dnsrecon -d dominio`
-`dnsmap dominio / dnsmap dominio -w diccionario`
+`dnsrecon -d dominio`   
+`dnsmap dominio / dnsmap dominio -w diccionario`   
 `dnsenum dominio -f diccionario`
+
+## DNS Caché Snooping
+
+`dnsrecon -t snoop -n servidor_dns -D listado_webs`
+
+## Banner Grabbing
+
+`echo "" | nc -v -n -w 1 IP 21-80`   
