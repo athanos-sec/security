@@ -20,6 +20,7 @@
 - [ ] IDORs  
 
      Ejemplo: La siguiente URL traería nuestra información personal: target.com/perfil?idUser=123 Cambiar por target.com/perfil?idUser=124 Trae información? Deberíamos tener acceso a 124?
+- [ ] Implementación de OAuth 2.0   
 ## Sesión
 - [ ] No validación de cookie
 - [ ] No seteo de nueva cookie de sesión (session fixation)
