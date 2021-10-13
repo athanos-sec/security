@@ -31,7 +31,7 @@
 3. Controlar que el teléfono este en modo debug: Settings -> Developer options -> Habilitar USB debugging mode
 4. Conectar mediante adb el teléfono: ```adb connect IP:5555```
 5. Verificar arquitectura: ```adb shell getprop ro.product.cpu.abi```
-6. Descargar [https://github.com/frida/frida/releases]Frida según la arquitectura
+6. Descargar [Frida](https://github.com/frida/frida/releases) según la arquitectura
 7. Mover Frida: ```adb push frida-server /data/local/tmp/```
 8. Mover certificado: ```adb push cacert.crt /data/local/tmp/cert-der.crt```
 9. Dar permisos: ```adb shell chmod +x /data/local/tmp/frida-server```
@@ -40,5 +40,5 @@
 12. Ejecutamos: ```frida -U -l frida-script.js --no-pause -f nomepaquete```
 
 Algunos puntos que pueden ser necesarios:
-* Instalar Open GApps, desde el dispositivo o [https://opengapps.org/]descargando la versión Pico para android y arquitectura correspondiente.
-* Instalar [https://github.com/m9rco/Genymotion_ARM_Translation]ARM_translation
+* Instalar Open GApps, desde el dispositivo o [descargando](https://opengapps.org/) la versión Pico para android y arquitectura correspondiente.
+* Instalar [ARM translation](https://github.com/m9rco/Genymotion_ARM_Translation)
