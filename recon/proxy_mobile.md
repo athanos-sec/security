@@ -27,7 +27,7 @@
 ## Frida
 
 1. Instalar Frida: ```pip install Frida``` ```pip install frida-tools```
-2. Descargar script para frida, para root check y ssl-pinnig se puede usar: dsa.js
+2. Descargar script para frida, para root check y ssl-pinnig se puede usar: [dsa.js](https://github.com/athanos-sec/security/blob/main/recon/dsa.js)
 3. Controlar que el teléfono este en modo debug: Settings -> Developer options -> Habilitar USB debugging mode
 4. Conectar mediante adb el teléfono: ```adb connect IP:5555```
 5. Verificar arquitectura: ```adb shell getprop ro.product.cpu.abi```
