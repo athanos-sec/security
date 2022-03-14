@@ -7,7 +7,7 @@
 3. Obtener el subject hash: ```openssl x509 -inform PEM -subject_hash_old -in cacert.pem | head -1```
 4. Renombrar con el hash obtenido: ```mv cacert.pem <hash>.0```
 5. Copiar el certificado al teléfono: ```adb push <hash>.0 /system/etc/security/cacerts```
-6. Dar permisos: ```adb shell chmod 644 /system/etc/security/cacerts/<hash>.0``
+6. Dar permisos: ```adb shell chmod 644 /system/etc/security/cacerts/<hash>.0```
 7. Reiniciar dispositivo
 8. Ingresar a Settings -> Security -> Trusted Credentials deberiamos encontrar “Portswigger CA” como system trusted CA.
 
