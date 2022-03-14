@@ -6,22 +6,12 @@
 2. Convertirlo en PEM: ```openssl x509 -inform DER -in cacert.der -out cacert.pem```
 3. Obtener el subject hash: ```openssl x509 -inform PEM -subject_hash_old -in cacert.pem | head -1```
 4. Renombrar con el hash obtenido: ```mv cacert.pem <hash>.0```
-5. Copiar el certificado al teléfono: ```adb push <cert>.0 /sdcard/```
-6. Interfaz adb: ```adb shell```
-7. Mover certificado: ```mv /sdcard/<cert>.0 /system/etc/security/cacerts/```
-8. Dar permisos: ```chmod 644 /system/etc/security/cacerts/<cert>.0```
-9. Reiniciar dispositivo
-10. Ingresar a Settings -> Security -> Trusted Credentials deberiamos encontrar “Portswigger CA” como system trusted CA.
+5. Copiar el certificado al teléfono: ```adb push <hash>.0 /system/etc/security/cacerts```
+6. Dar permisos: ```adb shell chmod 644 /system/etc/security/cacerts/<hash>.0``
+7. Reiniciar dispositivo
+8. Ingresar a Settings -> Security -> Trusted Credentials deberiamos encontrar “Portswigger CA” como system trusted CA.
 
-En el caso de un error en el paso 7:
-1. Crear un directorio temporal por separado: ```mkdir -m 700 /wherever/you/want```
-2. Copiar los certificados existentes: ```cp /system/etc/security/cacerts/* /wherever/you/want/```
-3. Crear un montaje en memoria: ```mount -t tmpfs tmpfs /system/etc/security/cacerts```
-4. Copiar los certificados existentes nuevamente en el montaje tmpfs: ```mv /wherever/you/want/* /system/etc/security/cacerts/```
-5. Mover certificado: ```mv /sdcard/<cert>.0 /system/etc/security/cacerts/```
-6. Actualizar permisos: ```chown root:root /system/etc/security/cacerts/*```
-```chmod 644 /system/etc/security/cacerts/*```
-```chcon u:object_r:system_file:s0 /system/etc/security/cacerts/*```
+En el caso de un error en el paso 5, ejecutar ```adb remount``` debido a que de forma predeterminada, el directorio /system estará en modo de solo lectura.
 
 ## Objection
 
