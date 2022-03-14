@@ -13,6 +13,16 @@
 9. Reiniciar dispositivo
 10. Ingresar a Settings -> Security -> Trusted Credentials deberiamos encontrar “Portswigger CA” como system trusted CA.
 
+En el caso de un error en el paso 7:
+1. Crear un directorio temporal por separado: ```mkdir -m 700 /wherever/you/want```
+2. Copiar los certificados existentes: ```cp /system/etc/security/cacerts/* /wherever/you/want/```
+3. Crear un montaje en memoria: ```mount -t tmpfs tmpfs /system/etc/security/cacerts```
+4. Copiar los certificados existentes nuevamente en el montaje tmpfs: ```mv /wherever/you/want/* /system/etc/security/cacerts/```
+5. Mover certificado: ```mv /sdcard/<cert>.0 /system/etc/security/cacerts/```
+6. Actualizar permisos: ```chown root:root /system/etc/security/cacerts/*```
+```chmod 644 /system/etc/security/cacerts/*```
+```chcon u:object_r:system_file:s0 /system/etc/security/cacerts/*```
+
 ## Objection
 
 1. Instalar Objection: ```pip3 install objection```
