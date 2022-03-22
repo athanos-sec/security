@@ -1,5 +1,11 @@
 # Guía para proxear una app mobile
 
+## Extraer APK
+
+1. Listar paquetes y filtar por la app en cuestión: ```adb shell pm list packages | grep <name>```
+2. Obtener la ruta de al app: ```adb shell pm path <com.name.app>```
+3. Pullear el base.apk: ```adb pull /data/app/com.name.app-SPZUGt-VzaVlhjaTAW9xUQ==/base.apk```
+
 ## Certificado a nivel de sistema
 
 1. Exportar certificado de burp en formato DER o descargarlo y modificarlo: ```mv cacert.crt cacert.der```
